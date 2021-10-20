@@ -1,0 +1,1593 @@
+  [1m[35m (39.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (143.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (131.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (49.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUser (20210514154302)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514154302"]]
+  [1m[36mTRANSACTION (181.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20210514225529)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (17.8ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225529"]]
+  [1m[36mTRANSACTION (220.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActionMailboxTables (20210514225530)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (30.1ms)[0m  [1m[35mCREATE TABLE "action_mailbox_inbound_emails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" integer DEFAULT 0 NOT NULL, "message_id" varchar NOT NULL, "message_checksum" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_mailbox_inbound_emails_uniqueness" ON "action_mailbox_inbound_emails" ("message_id", "message_checksum")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225530"]]
+  [1m[36mTRANSACTION (215.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePost (20210518125425)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (33.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "Title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518125425"]]
+  [1m[36mTRANSACTION (147.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddTitleToPosts (20210518155724)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518155724"]]
+  [1m[36mTRANSACTION (107.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20210518173249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (19.7ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518173249"]]
+  [1m[36mTRANSACTION (164.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCategoryToPosts (20210518191748)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "posts"[0m
+  [1m[35m (2.5ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "aposts"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "posts"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "aposts"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518191748"]]
+  [1m[36mTRANSACTION (122.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPostsCountToCategories (20210518195717)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.8ms)[0m  [1m[35mALTER TABLE "categories" ADD "posts_count" integer DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518195717"]]
+  [1m[36mTRANSACTION (113.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddImageToPosts (20210519101815)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_data" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210519101815"]]
+  [1m[36mTRANSACTION (195.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20210520145955)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (41.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210520145955"]]
+  [1m[36mTRANSACTION (113.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddVerifiedToUsers (20210523155327)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.0ms)[0m  [1m[35mALTER TABLE "users" ADD "verifield" boolean DEFAULT 0[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "verification_token" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210523155327"]]
+  [1m[36mTRANSACTION (176.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTags (20210527092834)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "tags" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "tag" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210527092834"]]
+  [1m[36mTRANSACTION (126.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (41.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-05-28 16:26:49.709510"], ["updated_at", "2021-05-28 16:26:49.709510"]]
+  [1m[36mTRANSACTION (151.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.4ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:17.781784', '2021-05-28 16:27:17.781784');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:17.781784', '2021-05-28 16:27:17.781784');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:17.811670', '2021-05-28 16:27:17.811670');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:17.811670', '2021-05-28 16:27:17.811670')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.0ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:17.819178', '2021-05-28 16:27:17.819178');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:17.819178', '2021-05-28 16:27:17.819178');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:17.819295', '2021-05-28 16:27:17.819295');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:17.819295', '2021-05-28 16:27:17.819295')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.8ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:17.932057', '2021-05-28 16:27:17.932057');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:17.932057', '2021-05-28 16:27:17.932057');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:17.932202', '2021-05-28 16:27:17.932202');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:17.932202', '2021-05-28 16:27:17.932202')[0m
+  [1m[36mTRANSACTION (23.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.4ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:18.034273', '2021-05-28 16:27:18.034273');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:18.034273', '2021-05-28 16:27:18.034273');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:18.034397', '2021-05-28 16:27:18.034397');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:18.034397', '2021-05-28 16:27:18.034397')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.5ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (22.0ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:18.280321', '2021-05-28 16:27:18.280321');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:18.280321', '2021-05-28 16:27:18.280321');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:18.280471', '2021-05-28 16:27:18.280471');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:18.280471', '2021-05-28 16:27:18.280471')[0m
+  [1m[36mTRANSACTION (32.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (5.7ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:18.568909', '2021-05-28 16:27:18.568909');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:18.568909', '2021-05-28 16:27:18.568909');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:18.569057', '2021-05-28 16:27:18.569057');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:18.569057', '2021-05-28 16:27:18.569057')[0m
+  [1m[36mTRANSACTION (104.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (4.8ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (9.9ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:23.529091', '2021-05-28 16:27:23.529091');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:23.529091', '2021-05-28 16:27:23.529091');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:23.529288', '2021-05-28 16:27:23.529288');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:23.529288', '2021-05-28 16:27:23.529288')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (4.0ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:23.650546', '2021-05-28 16:27:23.650546');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:23.650546', '2021-05-28 16:27:23.650546');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:23.650681', '2021-05-28 16:27:23.650681');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:23.650681', '2021-05-28 16:27:23.650681')[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (4.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (6.3ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:23.727930', '2021-05-28 16:27:23.727930');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:23.727930', '2021-05-28 16:27:23.727930');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:23.729988', '2021-05-28 16:27:23.729988');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:23.729988', '2021-05-28 16:27:23.729988')[0m
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.5ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.9ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:23.818264', '2021-05-28 16:27:23.818264');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:23.818264', '2021-05-28 16:27:23.818264');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:23.818392', '2021-05-28 16:27:23.818392');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:23.818392', '2021-05-28 16:27:23.818392')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (1.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (6.7ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:27:23.884456', '2021-05-28 16:27:23.884456');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:27:23.884456', '2021-05-28 16:27:23.884456');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:27:23.884660', '2021-05-28 16:27:23.884660');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:27:23.884660', '2021-05-28 16:27:23.884660')[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.3ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:30:28.081476', '2021-05-28 16:30:28.081476');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:30:28.081476', '2021-05-28 16:30:28.081476');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:30:28.085301', '2021-05-28 16:30:28.085301');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:30:28.085301', '2021-05-28 16:30:28.085301')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (2.4ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:30:28.092788', '2021-05-28 16:30:28.092788');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:30:28.092788', '2021-05-28 16:30:28.092788');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:30:28.092910', '2021-05-28 16:30:28.092910');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:30:28.092910', '2021-05-28 16:30:28.092910')[0m
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (4.6ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:30:28.273326', '2021-05-28 16:30:28.273326');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:30:28.273326', '2021-05-28 16:30:28.273326');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:30:28.280837', '2021-05-28 16:30:28.280837');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:30:28.280837', '2021-05-28 16:30:28.280837')[0m
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (254.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (179.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUser (20210514154302)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (36.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514154302"]]
+  [1m[36mTRANSACTION (198.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20210514225529)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225529"]]
+  [1m[36mTRANSACTION (132.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActionMailboxTables (20210514225530)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (46.4ms)[0m  [1m[35mCREATE TABLE "action_mailbox_inbound_emails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" integer DEFAULT 0 NOT NULL, "message_id" varchar NOT NULL, "message_checksum" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_mailbox_inbound_emails_uniqueness" ON "action_mailbox_inbound_emails" ("message_id", "message_checksum")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225530"]]
+  [1m[36mTRANSACTION (144.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePost (20210518125425)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "Title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518125425"]]
+  [1m[36mTRANSACTION (131.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddTitleToPosts (20210518155724)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (33.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518155724"]]
+  [1m[36mTRANSACTION (95.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20210518173249)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518173249"]]
+  [1m[36mTRANSACTION (131.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCategoryToPosts (20210518191748)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "posts"[0m
+  [1m[35m (3.5ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "aposts"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "posts"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "aposts"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518191748"]]
+  [1m[36mTRANSACTION (122.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPostsCountToCategories (20210518195717)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.3ms)[0m  [1m[35mALTER TABLE "categories" ADD "posts_count" integer DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518195717"]]
+  [1m[36mTRANSACTION (137.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddImageToPosts (20210519101815)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.7ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_data" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210519101815"]]
+  [1m[36mTRANSACTION (122.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20210520145955)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210520145955"]]
+  [1m[36mTRANSACTION (140.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddVerifiedToUsers (20210523155327)
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.2ms)[0m  [1m[35mALTER TABLE "users" ADD "verifield" boolean DEFAULT 0[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "verification_token" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210523155327"]]
+  [1m[36mTRANSACTION (129.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-05-28 16:35:56.826727"], ["updated_at", "2021-05-28 16:35:56.826727"]]
+  [1m[36mTRANSACTION (128.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.4ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:36:31.331826', '2021-05-28 16:36:31.331826');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:36:31.331826', '2021-05-28 16:36:31.331826');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:36:31.335814', '2021-05-28 16:36:31.335814');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:36:31.335814', '2021-05-28 16:36:31.335814')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (6.5ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:36:31.344328', '2021-05-28 16:36:31.344328');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:36:31.344328', '2021-05-28 16:36:31.344328');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:36:31.344442', '2021-05-28 16:36:31.344442');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:36:31.344442', '2021-05-28 16:36:31.344442')[0m
+  [1m[36mTRANSACTION (2.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (4.2ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:36:31.448305', '2021-05-28 16:36:31.448305');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:36:31.448305', '2021-05-28 16:36:31.448305');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:36:31.448447', '2021-05-28 16:36:31.448447');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:36:31.448447', '2021-05-28 16:36:31.448447')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.4ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:37:39.867691', '2021-05-28 16:37:39.867691');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:37:39.867691', '2021-05-28 16:37:39.867691');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:37:39.871989', '2021-05-28 16:37:39.871989');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:37:39.871989', '2021-05-28 16:37:39.871989')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.5ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:40:25.560017', '2021-05-28 16:40:25.560017');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:40:25.560017', '2021-05-28 16:40:25.560017');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:40:25.565159', '2021-05-28 16:40:25.565159');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:40:25.565159', '2021-05-28 16:40:25.565159')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:49:44.632254', '2021-05-28 16:49:44.632254');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:49:44.632254', '2021-05-28 16:49:44.632254');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:49:44.640222', '2021-05-28 16:49:44.640222');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:49:44.640222', '2021-05-28 16:49:44.640222')[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (9.6ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:49:44.652078', '2021-05-28 16:49:44.652078');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:49:44.652078', '2021-05-28 16:49:44.652078');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:49:44.652209', '2021-05-28 16:49:44.652209');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:49:44.652209', '2021-05-28 16:49:44.652209')[0m
+  [1m[36mTRANSACTION (27.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.2ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 16:49:44.778548', '2021-05-28 16:49:44.778548');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 16:49:44.778548', '2021-05-28 16:49:44.778548');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 16:49:44.778670', '2021-05-28 16:49:44.778670');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 16:49:44.778670', '2021-05-28 16:49:44.778670')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.5ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 17:05:10.934048', '2021-05-28 17:05:10.934048');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 17:05:10.934048', '2021-05-28 17:05:10.934048');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 17:05:10.938284', '2021-05-28 17:05:10.938284');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 17:05:10.938284', '2021-05-28 17:05:10.938284')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.8ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 17:05:11.000089', '2021-05-28 17:05:11.000089');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 17:05:11.000089', '2021-05-28 17:05:11.000089');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 17:05:11.000227', '2021-05-28 17:05:11.000227');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 17:05:11.000227', '2021-05-28 17:05:11.000227')[0m
+  [1m[36mTRANSACTION (27.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-05-28 17:05:11.091451', '2021-05-28 17:05:11.091451');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-05-28 17:05:11.091451', '2021-05-28 17:05:11.091451');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-05-28 17:05:11.091587', '2021-05-28 17:05:11.091587');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-05-28 17:05:11.091587', '2021-05-28 17:05:11.091587')[0m
+  [1m[36mTRANSACTION (2.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateDelayedJobs (20210602120708)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "delayed_jobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar, "queue" varchar, "created_at" datetime(6), "updated_at" datetime(6))[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602120708"]]
+  [1m[36mTRANSACTION (122.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddResultToPost (20210602122248)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602122248"]]
+  [1m[36mTRANSACTION (224.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.2ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:26:34.236466', '2021-06-11 05:26:34.236466');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:26:34.249061', '2021-06-11 05:26:34.249061');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:26:34.249061', '2021-06-11 05:26:34.249061');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:26:34.253189', '2021-06-11 05:26:34.253189');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:26:34.253189', '2021-06-11 05:26:34.253189')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (67.7ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:26:34.341374', '2021-06-11 05:26:34.341374');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:26:34.341494', '2021-06-11 05:26:34.341494');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:26:34.341494', '2021-06-11 05:26:34.341494');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:26:34.341574', '2021-06-11 05:26:34.341574');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:26:34.341574', '2021-06-11 05:26:34.341574')[0m
+  [1m[36mTRANSACTION (55.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.4ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:26:34.780873', '2021-06-11 05:26:34.780873');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:26:34.780999', '2021-06-11 05:26:34.780999');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:26:34.780999', '2021-06-11 05:26:34.780999');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:26:34.781257', '2021-06-11 05:26:34.781257');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:26:34.781257', '2021-06-11 05:26:34.781257')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.5ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:28:51.172378', '2021-06-11 05:28:51.172378');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:28:51.177508', '2021-06-11 05:28:51.177508');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:28:51.177508', '2021-06-11 05:28:51.177508');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:28:51.180717', '2021-06-11 05:28:51.180717');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:28:51.180717', '2021-06-11 05:28:51.180717')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.6ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:28:51.188034', '2021-06-11 05:28:51.188034');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:28:51.188140', '2021-06-11 05:28:51.188140');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:28:51.188140', '2021-06-11 05:28:51.188140');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:28:51.188221', '2021-06-11 05:28:51.188221');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:28:51.188221', '2021-06-11 05:28:51.188221')[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (4.0ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:28:51.335515', '2021-06-11 05:28:51.335515');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:28:51.335641', '2021-06-11 05:28:51.335641');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:28:51.335641', '2021-06-11 05:28:51.335641');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:28:51.335718', '2021-06-11 05:28:51.335718');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:28:51.335718', '2021-06-11 05:28:51.335718')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.6ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (2, 'Cap', '2021-06-11 05:30:45.366664', '2021-06-11 05:30:45.366664');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:30:45.375186', '2021-06-11 05:30:45.375186');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:30:45.375186', '2021-06-11 05:30:45.375186');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:30:45.379249', '2021-06-11 05:30:45.379249');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:30:45.379249', '2021-06-11 05:30:45.379249')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (5.9ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (2, 'Cap', '2021-06-11 05:30:45.390029', '2021-06-11 05:30:45.390029');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:30:45.390212', '2021-06-11 05:30:45.390212');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:30:45.390212', '2021-06-11 05:30:45.390212');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:30:45.390424', '2021-06-11 05:30:45.390424');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:30:45.390424', '2021-06-11 05:30:45.390424')[0m
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (2, 'Cap', '2021-06-11 05:30:45.480068', '2021-06-11 05:30:45.480068');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'MyText', '2021-06-11 05:30:45.480175', '2021-06-11 05:30:45.480175');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'MyText', '2021-06-11 05:30:45.480175', '2021-06-11 05:30:45.480175');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (980190962, '2021-06-11 05:30:45.480280', '2021-06-11 05:30:45.480280');
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:30:45.480280', '2021-06-11 05:30:45.480280')[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.7ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:43:46.731441', '2021-06-11 05:43:46.731441');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (455239745, 'Bag', '2021-06-11 05:43:46.731441', '2021-06-11 05:43:46.731441');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (796405149, 'Pant', '2021-06-11 05:43:46.731441', '2021-06-11 05:43:46.731441');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (872294052, 'T-shirt', '2021-06-11 05:43:46.731441', '2021-06-11 05:43:46.731441');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'Cool le t-shirt', '2021-06-11 05:43:46.735469', '2021-06-11 05:43:46.735469');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'Waoouhh it''s how much?', '2021-06-11 05:43:46.735469', '2021-06-11 05:43:46.735469');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id") VALUES (754382202, 'T-shirt disponible', 'Stars Evolution vos presente des t-shirts de la marque BEFREE pur coton', '2021-06-11 05:43:46.738468', '2021-06-11 05:43:46.738468', 872294052);
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:43:46.738468', '2021-06-11 05:43:46.738468')[0m
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.6ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:43:46.748494', '2021-06-11 05:43:46.748494');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (455239745, 'Bag', '2021-06-11 05:43:46.748494', '2021-06-11 05:43:46.748494');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (796405149, 'Pant', '2021-06-11 05:43:46.748494', '2021-06-11 05:43:46.748494');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (872294052, 'T-shirt', '2021-06-11 05:43:46.748494', '2021-06-11 05:43:46.748494');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'Cool le t-shirt', '2021-06-11 05:43:46.748649', '2021-06-11 05:43:46.748649');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'Waoouhh it''s how much?', '2021-06-11 05:43:46.748649', '2021-06-11 05:43:46.748649');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id") VALUES (754382202, 'T-shirt disponible', 'Stars Evolution vos presente des t-shirts de la marque BEFREE pur coton', '2021-06-11 05:43:46.748725', '2021-06-11 05:43:46.748725', 872294052);
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:43:46.748725', '2021-06-11 05:43:46.748725')[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (3.0ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (422807475, 'Cap', '2021-06-11 05:43:46.902021', '2021-06-11 05:43:46.902021');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (455239745, 'Bag', '2021-06-11 05:43:46.902021', '2021-06-11 05:43:46.902021');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (796405149, 'Pant', '2021-06-11 05:43:46.902021', '2021-06-11 05:43:46.902021');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (872294052, 'T-shirt', '2021-06-11 05:43:46.902021', '2021-06-11 05:43:46.902021');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (980190962, 'Cool le t-shirt', '2021-06-11 05:43:46.902200', '2021-06-11 05:43:46.902200');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (298486374, 'Waoouhh it''s how much?', '2021-06-11 05:43:46.902200', '2021-06-11 05:43:46.902200');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id") VALUES (754382202, 'T-shirt disponible', 'Stars Evolution vos presente des t-shirts de la marque BEFREE pur coton', '2021-06-11 05:43:46.902284', '2021-06-11 05:43:46.902284', 872294052);
+INSERT INTO "posts" ("id", "created_at", "updated_at") VALUES (298486374, '2021-06-11 05:43:46.902284', '2021-06-11 05:43:46.902284')[0m
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (150.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (127.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUser (20210514154302)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514154302"]]
+  [1m[36mTRANSACTION (121.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20210514225529)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225529"]]
+  [1m[36mTRANSACTION (164.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActionMailboxTables (20210514225530)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "action_mailbox_inbound_emails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" integer DEFAULT 0 NOT NULL, "message_id" varchar NOT NULL, "message_checksum" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_mailbox_inbound_emails_uniqueness" ON "action_mailbox_inbound_emails" ("message_id", "message_checksum")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225530"]]
+  [1m[36mTRANSACTION (129.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePost (20210518125425)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (28.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "Title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518125425"]]
+  [1m[36mTRANSACTION (129.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddTitleToPosts (20210518155724)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (6.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518155724"]]
+  [1m[36mTRANSACTION (137.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20210518173249)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518173249"]]
+  [1m[36mTRANSACTION (128.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCategoryToPosts (20210518191748)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "posts"[0m
+  [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "aposts"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (1.5ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "aposts"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518191748"]]
+  [1m[36mTRANSACTION (149.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPostsCountToCategories (20210518195717)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "categories" ADD "posts_count" integer DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518195717"]]
+  [1m[36mTRANSACTION (100.3ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddImageToPosts (20210519101815)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (159.4ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_data" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210519101815"]]
+  [1m[36mTRANSACTION (130.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20210520145955)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210520145955"]]
+  [1m[36mTRANSACTION (130.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddVerifiedToUsers (20210523155327)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.7ms)[0m  [1m[35mALTER TABLE "users" ADD "verifield" boolean DEFAULT 0[0m
+  [1m[35m (2.1ms)[0m  [1m[35mALTER TABLE "users" ADD "verification_token" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210523155327"]]
+  [1m[36mTRANSACTION (128.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDelayedJobs (20210602120708)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "delayed_jobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar, "queue" varchar, "created_at" datetime(6), "updated_at" datetime(6))[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602120708"]]
+  [1m[36mTRANSACTION (148.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddResultToPost (20210602122248)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (5.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602122248"]]
+  [1m[36mTRANSACTION (142.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-06-12 21:46:34.056054"], ["updated_at", "2021-06-12 21:46:34.056054"]]
+  [1m[36mTRANSACTION (138.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (221.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (106.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUser (20210514154302)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514154302"]]
+  [1m[36mTRANSACTION (127.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20210514225529)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar NOT NULL, "created_at" datetime NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" integer NOT NULL, "blob_id" integer NOT NULL, "created_at" datetime NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "blob_id" integer NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225529"]]
+  [1m[36mTRANSACTION (198.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActionMailboxTables (20210514225530)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "action_mailbox_inbound_emails" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "status" integer DEFAULT 0 NOT NULL, "message_id" varchar NOT NULL, "message_checksum" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_mailbox_inbound_emails_uniqueness" ON "action_mailbox_inbound_emails" ("message_id", "message_checksum")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210514225530"]]
+  [1m[36mTRANSACTION (123.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreatePost (20210518125425)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "Title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518125425"]]
+  [1m[36mTRANSACTION (139.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddTitleToPosts (20210518155724)
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (6.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518155724"]]
+  [1m[36mTRANSACTION (105.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCategories (20210518173249)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (75.3ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518173249"]]
+  [1m[36mTRANSACTION (340.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddCategoryToPosts (20210518191748)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "posts"[0m
+  [1m[35m (4.9ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at")
+                     SELECT "id","Title","content","created_at","updated_at" FROM "aposts"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id")
+                     SELECT "id","Title","content","created_at","updated_at","category_id" FROM "aposts"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518191748"]]
+  [1m[36mTRANSACTION (131.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPostsCountToCategories (20210518195717)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.3ms)[0m  [1m[35mALTER TABLE "categories" ADD "posts_count" integer DEFAULT 0[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210518195717"]]
+  [1m[36mTRANSACTION (124.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddImageToPosts (20210519101815)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (12.5ms)[0m  [1m[35mALTER TABLE "posts" ADD "image_data" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210519101815"]]
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20210520145955)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "comment" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210520145955"]]
+  [1m[36mTRANSACTION (148.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddVerifiedToUsers (20210523155327)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (18.6ms)[0m  [1m[35mALTER TABLE "users" ADD "verifield" boolean DEFAULT 0[0m
+  [1m[35m (1.1ms)[0m  [1m[35mALTER TABLE "users" ADD "verification_token" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210523155327"]]
+  [1m[36mTRANSACTION (114.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDelayedJobs (20210602120708)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.5ms)[0m  [1m[35mCREATE TABLE "delayed_jobs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "attempts" integer DEFAULT 0 NOT NULL, "handler" text NOT NULL, "last_error" text, "run_at" datetime, "locked_at" datetime, "failed_at" datetime, "locked_by" varchar, "queue" varchar, "created_at" datetime(6), "updated_at" datetime(6))[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "delayed_jobs_priority" ON "delayed_jobs" ("priority", "run_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602120708"]]
+  [1m[36mTRANSACTION (145.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddResultToPost (20210602122248)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (6.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210602122248"]]
+  [1m[36mTRANSACTION (123.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (3.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-06-12 22:01:30.063731"], ["updated_at", "2021-06-12 22:01:30.063731"]]
+  [1m[36mTRANSACTION (124.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (30.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.4ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (800674185, 'Cap', '2021-06-17 17:47:37.603258', '2021-06-17 17:47:37.603258');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (917504053, 'Bag', '2021-06-17 17:47:37.603258', '2021-06-17 17:47:37.603258');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (28782758, 'Pant', '2021-06-17 17:47:37.603258', '2021-06-17 17:47:37.603258');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (533964039, 'T-shirt', '2021-06-17 17:47:37.603258', '2021-06-17 17:47:37.603258');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (122467993, 'MyText', '2021-06-17 17:47:37.607640', '2021-06-17 17:47:37.607640');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (507897645, 'MyText', '2021-06-17 17:47:37.607640', '2021-06-17 17:47:37.607640');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id", "image_data") VALUES (277846598, 'Title 1', 'Body 1', '2021-06-17 17:47:37.610602', '2021-06-17 17:47:37.610602', 917504053, 'image1');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (758109964, 'jean@gmail.com', 'Jean Dupont', '2021-06-17 17:47:37.613659', '2021-06-17 17:47:37.613659', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (1054394046, 'kamdembelmond@gmail.com', 'belmond kamdem', '2021-06-17 17:47:37.613659', '2021-06-17 17:47:37.613659', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (80145192, 'hongrois@gmail.com', 'Hongrois', '2021-06-17 17:47:37.613659', '2021-06-17 17:47:37.613659', 0, 'a2b8743619ddb5e723092cd7c588473')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (4.2ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (800674185, 'Cap', '2021-06-17 17:47:37.626339', '2021-06-17 17:47:37.626339');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (917504053, 'Bag', '2021-06-17 17:47:37.626339', '2021-06-17 17:47:37.626339');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (28782758, 'Pant', '2021-06-17 17:47:37.626339', '2021-06-17 17:47:37.626339');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (533964039, 'T-shirt', '2021-06-17 17:47:37.626339', '2021-06-17 17:47:37.626339');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (122467993, 'MyText', '2021-06-17 17:47:37.626495', '2021-06-17 17:47:37.626495');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (507897645, 'MyText', '2021-06-17 17:47:37.626495', '2021-06-17 17:47:37.626495');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id", "image_data") VALUES (277846598, 'Title 1', 'Body 1', '2021-06-17 17:47:37.626585', '2021-06-17 17:47:37.626585', 917504053, 'image1');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (758109964, 'jean@gmail.com', 'Jean Dupont', '2021-06-17 17:47:37.626661', '2021-06-17 17:47:37.626661', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (1054394046, 'kamdembelmond@gmail.com', 'belmond kamdem', '2021-06-17 17:47:37.626661', '2021-06-17 17:47:37.626661', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (80145192, 'hongrois@gmail.com', 'Hongrois', '2021-06-17 17:47:37.626661', '2021-06-17 17:47:37.626661', 0, 'a2b8743619ddb5e723092cd7c588473')[0m
+  [1m[36mTRANSACTION (139.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------
+CategoryTest: test_title_uniqueness
+-----------------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."title" = ? LIMIT ?[0m  [["title", "Cap"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (126.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------
+CategoryTest: test_title_presence
+---------------------------------
+  [1m[36mCategory Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."title" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."title" = ? LIMIT ?[0m  [["title", " "], ["LIMIT", 1]]
+  [1m[36mCategory Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."title" = ? LIMIT ?[0m  [["title", "Category Title T-shirt "], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mCategory Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "categories" WHERE "categories"."title" = ? LIMIT ?[0m  [["title", "Category Title T-shirt "], ["LIMIT", 1]]
+  [1m[36mCategory Create (8.1ms)[0m  [1m[32mINSERT INTO "categories" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "Category Title T-shirt "], ["created_at", "2021-06-17 17:47:37.970543"], ["updated_at", "2021-06-17 17:47:37.970543"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (24.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (2.3ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (800674185, 'Cap', '2021-06-17 17:49:04.311105', '2021-06-17 17:49:04.311105');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (917504053, 'Bag', '2021-06-17 17:49:04.311105', '2021-06-17 17:49:04.311105');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (28782758, 'Pant', '2021-06-17 17:49:04.311105', '2021-06-17 17:49:04.311105');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (533964039, 'T-shirt', '2021-06-17 17:49:04.311105', '2021-06-17 17:49:04.311105');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (122467993, 'MyText', '2021-06-17 17:49:04.315218', '2021-06-17 17:49:04.315218');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (507897645, 'MyText', '2021-06-17 17:49:04.315218', '2021-06-17 17:49:04.315218');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id", "image_data") VALUES (277846598, 'Title 1', 'Body 1', '2021-06-17 17:49:04.318188', '2021-06-17 17:49:04.318188', 917504053, 'image1');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (758109964, 'jean@gmail.com', 'Jean Dupont', '2021-06-17 17:49:04.321128', '2021-06-17 17:49:04.321128', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (1054394046, 'kamdembelmond@gmail.com', 'belmond kamdem', '2021-06-17 17:49:04.321128', '2021-06-17 17:49:04.321128', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (80145192, 'hongrois@gmail.com', 'Hongrois', '2021-06-17 17:49:04.321128', '2021-06-17 17:49:04.321128', 0, 'a2b8743619ddb5e723092cd7c588473')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (5.7ms)[0m  [1m[31mDELETE FROM "categories";
+DELETE FROM "comments";
+DELETE FROM "posts";
+DELETE FROM "users";
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (800674185, 'Cap', '2021-06-17 17:49:04.332348', '2021-06-17 17:49:04.332348');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (917504053, 'Bag', '2021-06-17 17:49:04.332348', '2021-06-17 17:49:04.332348');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (28782758, 'Pant', '2021-06-17 17:49:04.332348', '2021-06-17 17:49:04.332348');
+INSERT INTO "categories" ("id", "title", "created_at", "updated_at") VALUES (533964039, 'T-shirt', '2021-06-17 17:49:04.332348', '2021-06-17 17:49:04.332348');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (122467993, 'MyText', '2021-06-17 17:49:04.332501', '2021-06-17 17:49:04.332501');
+INSERT INTO "comments" ("id", "comment", "created_at", "updated_at") VALUES (507897645, 'MyText', '2021-06-17 17:49:04.332501', '2021-06-17 17:49:04.332501');
+INSERT INTO "posts" ("id", "Title", "content", "created_at", "updated_at", "category_id", "image_data") VALUES (277846598, 'Title 1', 'Body 1', '2021-06-17 17:49:04.332589', '2021-06-17 17:49:04.332589', 917504053, 'image1');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (758109964, 'jean@gmail.com', 'Jean Dupont', '2021-06-17 17:49:04.332663', '2021-06-17 17:49:04.332663', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (1054394046, 'kamdembelmond@gmail.com', 'belmond kamdem', '2021-06-17 17:49:04.332663', '2021-06-17 17:49:04.332663', 1, 'a2b8743619ddb5e723092cd7c588473');
+INSERT INTO "users" ("id", "email", "name", "created_at", "updated_at", "verifield", "verification_token") VALUES (80145192, 'hongrois@gmail.com', 'Hongrois', '2021-06-17 17:49:04.332663', '2021-06-17 17:49:04.332663', 0, 'a2b8743619ddb5e723092cd7c588473')[0m
+  [1m[36mTRANSACTION (162.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------
+PostTest: test_image_presence
+-----------------------------
+  [1m[36mTRANSACTION (124.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------
+PostTest: test_content_presence
+-------------------------------
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------
+PostTest: test_title_presence
+-----------------------------
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------
+PostTest: test_categories_relation
+----------------------------------
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 800674185], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddProfilToUser (20210621205619)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (9.7ms)[0m  [1m[35mALTER TABLE "users" ADD "profile_data" text[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210621205619"]]
+  [1m[36mTRANSACTION (132.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.8ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (17.8ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (5.6ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (1.4ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (18.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (23.3ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (96.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (2.9ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (11.9ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (3.2ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (37.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (26.4ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (31.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (8.7ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (2.1ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (19.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPosts (20210623132957)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.2ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (3.8ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (1.7ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (39.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserToPost (20210625150149)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (20.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "aposts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE INDEX "tindex_aposts_on_category_id" ON "aposts" ("category_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "aposts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "posts"[0m
+  [1m[35m (2.2ms)[0m  [1m[35mDROP TABLE "posts"[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "posts" ("id" integer NOT NULL PRIMARY KEY, "Title" varchar DEFAULT NULL, "content" text DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "category_id" integer NOT NULL, "image_data" text DEFAULT NULL, "user_id" integer NOT NULL, CONSTRAINT "fk_rails_9b1b26f040"
+FOREIGN KEY ("category_id")
+  REFERENCES "categories" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_posts_on_category_id" ON "posts" ("category_id")[0m
+  [1m[35m (0.9ms)[0m  [1m[32mINSERT INTO "posts" ("id","Title","content","created_at","updated_at","category_id","image_data")
+                     SELECT "id","Title","content","created_at","updated_at","category_id","image_data" FROM "aposts"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "schema_sha1"]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

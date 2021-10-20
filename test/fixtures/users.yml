@@ -1,0 +1,19 @@
+jean: 
+  name: Jean Dupont
+  email: jean@gmail.com
+  profile: image.png
+  verifield: true
+  verification_token: a2b8743619ddb5e723092cd7c588473
+belmond:
+  name: belmond kamdem
+  email: kamdembelmond@gmail.com
+  profile: image.png
+  verifield: true
+  verification_token: a2b8743619ddb5e723092cd7c588473
+
+Hongrois:
+  name: Hongrois
+  email: hongrois@gmail.com
+  profile: image.png
+  verifield: false
+  verification_token: a2b8743619ddb5e723092cd7c588473

@@ -1,0 +1,16 @@
+
+	- if @category.errors
+		ul
+			- @category.errors.full_messages.each do |msg|
+					li= msg
+	div[style="margin-left:34%;"] 	
+        h1 Modifier une catégorie d'article!
+		br
+	
+		= simple_form_for @category,html: {class: 'form-horizontal'} do |f| 
+			.row
+			 	.col-sm-5=f.input :cat_libelle,placeholder: "Libéllé categorie",:label =>"Libéllé catégorie" ,:required=>"required" , :input_html =>{ :class  => "form-control"}
+			br
+		
+			=f.submit :value =>"Créer Catégorie" ,class: 'btn btn-primary' ,style: 'margin-top:10px'
+

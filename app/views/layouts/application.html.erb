@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarsShop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'applications', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div class="container-fluid-lg" >
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner p-9 mb-2  text-light bg-danger"  >
+            <div class="carousel-item active" >
+              <p class="text-center fs-10 fw-bold">BIENVENUE SUR STARS SHOP </p>
+              <p class="text-center fs-12 fw-lighther" style="margin-top:-1%;">Votre boutique pour vos shopping ouvert 24H/24 </p>
+            </div>
+            <div class="carousel-item">
+            <p class="text-center fs-10 fw-bold">Que des produits de qualités sur Stars Shop </p>
+            <p class="text-center fs-12 fw-light" style="margin-top:-1%;">Faites nous confiance lors de vos achats</p>
+            </div>
+            <div class="carousel-item">
+            <p class="text-center fs-10 fw-bold">Restez chez vous et faites vous livrez</p>
+            <p class="text-center fs-12 fw-light" style="margin-top:-1%;">Chez nous tout est Free</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  <!-- first navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light " style="margin-top:-1%;">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav" style="margin:auto;">
+              
+            <li class="nav-item  ">
+              <a class="nav-link active text-dark " aria-current="page" href="/Stars Shop/accueil">Ma boutique</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="#">Homme</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="#">Femme</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="#" >Blog</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-dark" href="#" id="text-header">A propos</a>
+            </li>
+           
+         
+          </ul>
+          <ul class="navbar-nav me-auto" >
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="/Stars Shop/accueil">
+                        <img src="../../uploads/TITRE-shop.png" class="d-inline position-absolute top-50 start-0 translate-middle " alt="TITRE-shop.png" style="height:130px;margin-left:10%;">
+                      </a>
+                    </li>
+                    <li class="nav-item mx-4 ">
+                      <a class="nav-link text-dark" href="#"><img src="../../uploads/localisation.png" class="d-inline " alt="localisations.png" style="height:20px;">Localisation</a>
+                    </li>
+                    <li class="nav-item ">
+                       <button type="button" class="btn btn-outline-danger btn-sm rounded-pill"><a class="nav-link text-dark" href="#">Login</a></button>
+                    </li>
+                    <li class="nav-item mx-4">
+                       <button type="button" class="btn btn-outline-warning btn-sm rounded-pill"><a class="nav-link text-dark" href="#">S'inscrire</a></button>
+                    </li>
+                   
+                    <li class="nav-item">
+                      <a class="nav-link " aria-current="page" href="#">
+                        <img src="../../uploads/cart.png" class="d-inline position-absolute top-50 end-0 translate-middle " alt="cart.png" style="height:40px;margin-right:4%;">
+                        <span class="position-absolute top-50 end-0 translate-middle badge rounded-pill bg-danger " style="margin-right:5%;">
+                          0
+                         
+                        </span>
+                      </a>
+                    </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+<!-- second navbar-->
+
+<div  class="container-fluid-lg" id="navbar-sm" style="display:none;">
+   
+    <div class="collapse" id="navbarToggleExternalContent" >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="#">Boutique</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link " href="#">Homme</a>
+          </li>
+          <li class="nav-item ">
+          <a class="nav-link " href="#">Femme</a>
+        </li>
+        
+        </ul>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+</div>
+
+
+
+
+
+
+
+      <div class="container-fluid">
+          <% flash.each do |status, msg| %>
+            <div class="alert alert-<%= status %>" id="head_content" style="margin-top:10px;text-align:center;padding-top:10px;">
+              <%= msg %>
+            </div>
+          <% end %>
+      
+          <div>
+            <%= yield %>
+          </div>
+      </div>
+
+  
+  </body>
+</html>

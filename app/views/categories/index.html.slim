@@ -1,0 +1,39 @@
+
+h1.text-center Liste de Categories
+div[style="margin-left:30%;"]                     
+            
+
+            p  #{@categories.count} catégories présents
+            
+                
+            
+            - if @categories.present?
+                    .row      
+                                    - @categories.each do |category|
+                                            .col-sm-4
+                                                    h5 =category.cat_libelle  
+                                                    div
+                                                        a href=category_path(category) 
+                                                            | Show &nbsp;&nbsp;&nbsp;
+                                                            
+                                                       
+                                                        a href=edit_category_path(category)
+                                                            | Edit &nbsp;&nbsp;&nbsp;
+                                                    
+                                                        a href=category_path(category) data-method="delete" data-confirm="really delete?"
+                                                            | Delete &nbsp;&nbsp;&nbsp;
+
+                                                   
+                                                            
+                                            
+                        
+
+
+
+
+            - else 
+                p Aucune catégorie n'est présent
+
+            br
+
+            = link_to "Nouvelle catégorie", new_category_path , class: 'btn btn-success'

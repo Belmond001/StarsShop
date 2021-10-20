@@ -1,0 +1,75 @@
+
+<div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="../../uploads/t-shirt-homme-noir.png" class="w-40 d-inline" alt="t-shirt-homme-noir.jpg" style="height:550px;">
+      <img src="../../uploads/11825652-1-white.jpg" class="w-40 d-inline" alt="11825652-1-white.jpg" style="height:550px;">
+      <img src="../../uploads/Tee-Shirt-Blanc.png" class="w-40 d-inline" alt="Tee-Shirt-Blanc.png" style="height:510px">
+      
+      
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="../../uploads/t-shirt-homme-noire.jpg" class=" w-40 d-inline" alt="t-shirt-homme-noire.jpg" style="height:550px">
+      <img src="../../uploads/11825652-1-whites.jpg" class=" w-40 d-inline" alt="11825652-1-whites.jpg" style="height:550px;">
+      <img src="../../uploads/Tee-Shirt-Blanc-Soirée.png" class="w-40 d-inline" alt="Tee-Shirt-Blanc-Soirée.png" style="height:510px">
+    </div>
+  
+  
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<div class="card shadow-sm p-3 mb-5 bg-body rounded position-absolute start-50 translate-middle" style="width: 33rem;">
+  <div class="card-body">
+    <h4 class="card-title" style="font-weight:bold;">SENT TOI LIBRE SUR STARS SHOP!</h4>
+    <p class="card-text">Stars Shop est votre boutique basée essentiellement sur la commercialisation des produits de la marque BE FREE. </p>
+    <button class="btn btn-danger btn-sm text-light"><a href="#" class="nav-link text-light"><img src="../../uploads/icon-plus.png" style="width:30px;margin-left:-6px;">En s'avoir plus</a> </button>
+    
+  </div>
+</div>
+br 
+br 
+br
+br
+br 
+br 
+br
+
+    .container-fluid.pt-4.bg-dark
+      .row 
+          .col
+                .text-center.text-light
+                    h4.fw-bold NOS CATEGORIES D'ARTICLES 
+      .row 
+          .col-sm-10.mx-auto
+            hr.bg-light 
+      .row 
+        div style="margin-left:auto;margin-right:auto;width:70%;"
+          .col.p-5
+            
+              - if @category.present?
+                    
+                                -@category.each do |category|
+                                    
+                                      a href="#"
+                                        button.btn.btn-outline-secondary.btn-lg.m-2
+                                          = category.cat_libelle
+                                      -if @sous_category.present?
+                                        -@sous_category.each do |sous_category|
+                                          -if category.id==sous_category.category_id 
+                                            a href="#"
+                                              button.btn.btn-outline-secondary.btn-lg.m-2
+                                                =sous_category.sous_cat_libelle 
+     
+                
+
+            
+                                                        

@@ -1,0 +1,32 @@
+
+	- if @post.errors
+		ul
+			- @post.errors.full_messages.each do |msg|
+					li= msg
+	div[style="margin-left:34%;"] 	
+        h1 Modifier un article!
+		br
+	
+		= simple_form_for @post ,html: {class: 'form-horizontal'} do |f| 
+			.row
+			    .form-label Sous catégorie:
+		    .row	
+			 	.col-sm-5=f.select :souscategory_id,Souscategory.pluck(:sous_cat_libelle,:id),:required=>"required" , :input_html =>{ :class  => "form-control"}
+			br
+			.row
+			 	.col-sm-5=f.input :name_post,placeholder: "Nom de l'article",label:"Nom de l'article", input_html:{ class:"form-control"}
+			br
+			.row 
+			  .col-sm-5= f.input :content_post,placeholder: "Contenu article",:label =>"Contenu de l'article" , :input_html =>{ :class  => "form-control"}
+			br 
+			.row 
+			  .col-sm-5= f.input :price_post ,placeholder: "Prix de l'article", :label =>"Prix de l'article" , :input_html =>{ :class  => "form-control"}
+			br
+			.row 
+			  .col-sm-5= f.input :image, as: :file ,placeholder: "Image de l'article",:label =>"Image d'article" , :input_html =>{ :class  => "form-control"}
+			br
+		    .row 
+			  .col-sm-5= f.input :Etat_post, placeholder: "Etat article",:label =>"Etat de l'article" , :input_html =>{ :class  => "form-control"}
+			br 
+			=f.submit :value =>"Créer Article" ,class: 'btn btn-primary' ,style: 'margin-top:10px'
+

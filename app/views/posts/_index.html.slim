@@ -1,0 +1,89 @@
+.div.bg-dark.pt-5
+      .row  
+        div style="margin-left:auto;margin-right:auto;width:50%;"  
+          .row.pb-5
+            .col-sm-3
+            
+                button.btn.btn-outline-danger.btn-lg style="border-radius:0" Filtrer par:
+            .col-sm-9 
+                  =simple_form_for "#" , html:{class:"form-horizontal"} do |f|
+                                  .text-light=f.input:selection,as: :select, collection:@tableau,selected:1,required:false,input_html:{class:"form-control"},label:false
+                                  =f.submit :value =>"Valider",class: 'btn btn-danger',type:"button" ,style: 'margin-top:10px'
+                                             
+
+
+br
+
+
+//h1.text-center = t('.all_posts')
+div                
+            
+            //p  Présentement il y'a #{@posts.count} articles
+            
+                
+            
+            - if @posts.present?
+                div style="background-color:yellow;"
+                  div.pt-5 style="margin-left:auto;margin-right:auto;width:70%;" 
+                    .row  
+                                .col-md-6
+                                    h4.fw-bold.text-uppercase
+                                     | Tee shirt pour homme
+                                    h5
+                      
+                                      |Les Meilleurs Tee shirt pour homme !!!
+                                    br
+                                    a.fw-bold href="#" 
+                                      |Découvrir 
+                                      img src="../../uploads/eye.png" style="width:15px;"
+                                .col-sm-5.ps-5 style="height:500px;"
+                                  img src="../../uploads/pexels-photo-6311251.jpeg" style="height:95%;" 
+
+                br 
+                div style="margin-left:auto;margin-right:auto;width:80%;"  
+                  .row
+                      - @posts.each do |post|
+                           .col-sm-4
+                                div.card-group        
+                                  div.card
+                                      = image_tag post.image_post_data.url, width:100
+                                      div.card-body
+                                        h5.card-title 
+                                          = post.name_post
+                                        p.card-text 
+                                          = post.content_post
+                                              
+                                      div.card-footer
+                                        small.text-muted 
+                                          = post.price_post 
+                                          |&nbsp;Fcfa   
+                                      a href=edit_post_path(post)
+                                          | Edit &nbsp;
+
+                                      a href=post_path(post) data-method="delete" data-confirm="really delete?"
+                                          | Delete &nbsp;
+ 
+                     
+                      /                 div
+                      /                     a href=post_path(post)
+                      /                         | Show &nbsp;
+                                              
+                                          
+                                         
+                      /                        
+                                      
+                      /                     a href=post_path(post) data-method="delete" data-confirm="really delete?"
+                      /                         | Delete &nbsp;
+
+                                                                      
+                                                            
+                                            
+                        
+
+
+
+
+           
+            br
+
+            = link_to "Nouveau article", new_post_path , class: 'btn btn-success'

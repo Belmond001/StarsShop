@@ -1,0 +1,20 @@
+ 
+	- if @sous_category.errors
+		ul
+			- @sous_category.errors.full_messages.each do |msg|
+					li= msg
+	div[style="margin-left:34%;"] 	
+        h1 Modifier une catégorie d'article!
+		br
+	
+		= simple_form_for @sous_category ,html: {class: 'form-horizontal'} do |f| 
+			.row
+			 	.col-sm-5=f.input :sous_cat_libelle,placeholder: "Libéllé sous categorie",:label =>"Libéllé sous catégorie" ,:required=>"required" , :input_html =>{ :class  => "form-control"}
+			br
+		   .row
+			    .form-label Catégorie:
+		    .row	
+			 	.col-sm-5=f.select :category_id,Category.pluck(:cat_libelle,:id),:required=>"required" , :input_html =>{ :class  => "form-control"}
+			br
+			=f.submit :value =>"Créer une sous catégorie" ,class: 'btn btn-primary' ,style: 'margin-top:10px'
+

@@ -1,0 +1,37 @@
+h1.text-center liste de Sous catégories
+div[style="margin-left:30%;"]                     
+            
+
+            p #{@sous_categories.count} sous catégories présents
+            
+                
+            
+            - if @sous_categories.present?
+                    .row      
+                                    - @sous_categories.each do |souscategory|
+                                            .col-sm-4  
+                                                    h5 =souscategory.sous_cat_libelle                      
+                                                    div
+                                                        a href=souscategory_path(souscategory)
+                                                            | Show &nbsp;&nbsp;&nbsp;
+                                                            
+                                                       
+                                                        a href=edit_souscategory_path(souscategory)
+                                                            | Edit &nbsp;&nbsp;&nbsp;
+                                                    
+                                                        a href=souscategory_path(souscategory) data-method="delete" data-confirm="really delete?"
+                                                            | Delete
+
+                                                  
+                                            
+                        
+
+
+
+
+            - else 
+                p Aucune sous catégories n'est présent
+
+            br
+
+            = link_to "Nouvelle sous catégorie", new_souscategory_path , class: 'btn btn-success'
